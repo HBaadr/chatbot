@@ -11,10 +11,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		54722C302D77407400C08663 /* Exceptions for "chatbot_framework" folder in "chatbot_framework" target */ = {
+		54722FA72D77506400C08663 /* Exceptions for "chatbot_framework" folder in "chatbot_framework" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			publicHeaders = (
-				chatbot_framework.h,
+			membershipExceptions = (
+				Package.swift,
 			);
 			target = 54722C2A2D77407400C08663 /* chatbot_framework */;
 		};
@@ -24,7 +24,7 @@
 		54722C2D2D77407400C08663 /* chatbot_framework */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				54722C302D77407400C08663 /* Exceptions for "chatbot_framework" folder in "chatbot_framework" target */,
+				54722FA72D77506400C08663 /* Exceptions for "chatbot_framework" folder in "chatbot_framework" target */,
 			);
 			path = chatbot_framework;
 			sourceTree = "<group>";
