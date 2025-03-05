@@ -9,7 +9,7 @@ import SwiftUI
 
 
 
-private final class BundleToken {}
+public final class BundleToken {}
 
 struct ChatBotView: View {
     @StateObject private var viewModel: ChatBotViewModel
