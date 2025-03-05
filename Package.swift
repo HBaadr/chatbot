@@ -24,10 +24,10 @@ let package = Package(
                 //.product(name: "SDWebImageSwiftUI", package: "SDWebImageSwiftUI"),
             ],
             resources: [
-                .copy("Resources/Fonts/BasierCircle-Medium.otf"),
-                .copy("Resources/Fonts/BasierCircle-Bold.otf"),
-                .copy("Resources/Fonts/BasierCircle-SemiBold.otf"),
-                .copy("Resources/Fonts/BasierCircle-Regular.otf"),
+                .process("Resources/Fonts/BasierCircle-Medium.otf"),
+                .process("Resources/Fonts/BasierCircle-Bold.otf"),
+                .process("Resources/Fonts/BasierCircle-SemiBold.otf"),
+                .process("Resources/Fonts/BasierCircle-Regular.otf"),
                 .process("Resources/Assets.xcassets")
             ]/*,
             swiftSettings: [
