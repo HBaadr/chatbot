@@ -25,15 +25,27 @@ public struct FontsModule {
     }
     
     fileprivate static func registerFont(bundle: Bundle, fontName: String, fontExtension: String){
-      let pathForResourceString = bundle.path(forResource: fontName, ofType: fontExtension)
-      let fontData = NSData(contentsOfFile: pathForResourceString!)
-      let dataProvider = CGDataProvider(data: fontData!)
-      let fontRef = CGFont(dataProvider!)
-      var errorRef: Unmanaged<CFError>? = nil
+        
+        // Check if the font is already registered
+        if UIFont(name: fontName, size: 12) != nil {
+            return
+        }
 
-      if (CTFontManagerRegisterGraphicsFont(fontRef!, &errorRef) == false) {
-        NSLog("Failed to register font - register graphics font failed - this font may have already been registered in the main bundle.")
-      }
+        guard let fontURL = bundle.url(forResource: fontName, withExtension: fontExtension) else {
+            fatalError("Couldn't find font \(fontName)")
+        }
+
+        guard let fontDataProvider = CGDataProvider(url: fontURL as CFURL) else {
+            fatalError("Couldn't load data from the font \(fontName)")
+        }
+
+        guard let font = CGFont(fontDataProvider) else {
+            fatalError("Couldn't create font from data")
+        }
+
+        var error: Unmanaged<CFError>?
+        let success = CTFontManagerRegisterGraphicsFont(font, &error)
+
     }
 }
 
