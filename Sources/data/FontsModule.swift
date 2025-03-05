@@ -18,7 +18,7 @@ public struct FontsModule {
     
     static func registerFonts() {
         BC.allCases.forEach { font in
-            registerFont(bundle: Bundle(identifier: "com.myframework")!, fontName: font.rawValue, fontExtension: "otf")
+            registerFont(bundle: .main, fontName: font.rawValue, fontExtension: "otf")
         }
     }
     
