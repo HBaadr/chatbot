@@ -30,22 +30,14 @@ public struct FontsModule {
         if UIFont(name: fontName, size: 12) != nil {
             return
         }
-
-        guard let fontURL = bundle.url(forResource: fontName, withExtension: fontExtension) else {
-            fatalError("Couldn't find font \(fontName)")
+        
+        if let cfURL = bundle.url(forResource: fontName, withExtension: fontExtension) {
+              CTFontManagerRegisterFontsForURL(cfURL as CFURL, .process, nil)
+        } else if let cfURL = bundle.url(forResource: fontName, withExtension: fontExtension) {
+              CTFontManagerRegisterFontsForURL(cfURL as CFURL, .process, nil)
+        } else {
+            assertionFailure("Could not find font:\(fontName) in bundle:\(bundle)")
         }
-
-        guard let fontDataProvider = CGDataProvider(url: fontURL as CFURL) else {
-            fatalError("Couldn't load data from the font \(fontName)")
-        }
-
-        guard let font = CGFont(fontDataProvider) else {
-            fatalError("Couldn't create font from data")
-        }
-
-        var error: Unmanaged<CFError>?
-        let success = CTFontManagerRegisterGraphicsFont(font, &error)
-
     }
 }
 
