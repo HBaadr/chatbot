@@ -9,7 +9,7 @@ import SwiftUI
 
 public let flowLayoutDefaultItemSpacing: CGFloat = 4
 
-public struct FlowLayout<RefreshBinding, Data: Collection, ItemView: View>: View {
+internal struct FlowLayout<RefreshBinding, Data: Collection, ItemView: View>: View {
   let mode: Mode
   @Binding var binding: RefreshBinding
   let items: Data

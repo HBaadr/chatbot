@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class FirebaseModule {
+internal class FirebaseModule {
 
     private static var callback: ((FirebaseEvent, [String: Any]? ) -> Void)?
 
@@ -27,7 +27,7 @@ public class FirebaseModule {
     }
 }
 
-public enum FirebaseParam: String {
+internal enum FirebaseParam: String {
     case typeOptionsChatbot = "type_options_chatbot"
     case contenu = "contenu"
 }

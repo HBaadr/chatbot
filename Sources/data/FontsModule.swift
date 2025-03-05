@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public enum BC : String, CaseIterable {
+internal enum BC : String, CaseIterable {
     case medium = "BasierCircle-Medium"
     case bold = "BasierCircle-Bold"
     case semibold = "BasierCircle-SemiBold"
