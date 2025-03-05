@@ -6,27 +6,29 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5472303C2D78682F00C08663 /* ChatBotPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547230002D78682F00C08663 /* ChatBotPackage.swift */; };
+		547230432D78682F00C08663 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 547230012D78682F00C08663 /* Localizable.xcstrings */; };
+		547230442D78682F00C08663 /* chatbot_framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 54722FFF2D78682F00C08663 /* chatbot_framework.h */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		54722C2B2D77407400C08663 /* chatbot_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = chatbot_framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54722FFF2D78682F00C08663 /* chatbot_framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chatbot_framework.h; sourceTree = "<group>"; };
+		547230002D78682F00C08663 /* ChatBotPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotPackage.swift; sourceTree = "<group>"; };
+		547230012D78682F00C08663 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		547230022D78682F00C08663 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		547230472D78699F00C08663 /* Exceptions for "chatbot_framework" folder in "chatbot_framework" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Package.swift,
-			);
-			target = 54722C2A2D77407400C08663 /* chatbot_framework */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		54722C2D2D77407400C08663 /* chatbot_framework */ = {
+		5472304D2D786AB400C08663 /* Resources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				547230472D78699F00C08663 /* Exceptions for "chatbot_framework" folder in "chatbot_framework" target */,
-			);
-			path = chatbot_framework;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		547230A42D786AB900C08663 /* Sources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +47,12 @@
 		54722C212D77407400C08663 = {
 			isa = PBXGroup;
 			children = (
-				54722C2D2D77407400C08663 /* chatbot_framework */,
+				547230A42D786AB900C08663 /* Sources */,
+				5472304D2D786AB400C08663 /* Resources */,
+				54722FFF2D78682F00C08663 /* chatbot_framework.h */,
+				547230002D78682F00C08663 /* ChatBotPackage.swift */,
+				547230012D78682F00C08663 /* Localizable.xcstrings */,
+				547230022D78682F00C08663 /* Package.swift */,
 				54722C2C2D77407400C08663 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +72,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547230442D78682F00C08663 /* chatbot_framework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +93,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				54722C2D2D77407400C08663 /* chatbot_framework */,
+				5472304D2D786AB400C08663 /* Resources */,
+				547230A42D786AB900C08663 /* Sources */,
 			);
 			name = chatbot_framework;
 			packageProductDependencies = (
@@ -132,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547230432D78682F00C08663 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5472303C2D78682F00C08663 /* ChatBotPackage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
