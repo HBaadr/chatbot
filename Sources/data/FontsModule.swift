@@ -14,11 +14,11 @@ internal enum BC : String, CaseIterable {
     case regular = "BasierCircle-Regular"
 }
 
-public struct FontsModule {
+public class FontsModule {
     
     static func registerFonts() {
         BC.allCases.forEach { font in
-            registerFont(bundle: Bundle(for: BundleToken.self), fontName: font.rawValue, fontExtension: "otf")
+            registerFont(bundle: Bundle(for: FontsModule.self), fontName: font.rawValue, fontExtension: "otf")
         }
     }
     

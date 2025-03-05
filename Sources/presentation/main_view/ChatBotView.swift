@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-
-
-public final class BundleToken {}
-
 struct ChatBotView: View {
     @StateObject private var viewModel: ChatBotViewModel
     @State private var openedSection: Int
