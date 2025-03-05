@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public let flowLayoutDefaultItemSpacing: CGFloat = 4
+internal let flowLayoutDefaultItemSpacing: CGFloat = 4
 
 internal struct FlowLayout<RefreshBinding, Data: Collection, ItemView: View>: View {
   let mode: Mode
@@ -18,7 +18,7 @@ internal struct FlowLayout<RefreshBinding, Data: Collection, ItemView: View>: Vi
 
   @State private var totalHeight: CGFloat
 
-  public init(mode: Mode,
+    internal init(mode: Mode,
               binding: Binding<RefreshBinding>,
               items: Data,
               itemSpacing: CGFloat = flowLayoutDefaultItemSpacing,
@@ -31,7 +31,7 @@ internal struct FlowLayout<RefreshBinding, Data: Collection, ItemView: View>: Vi
     _totalHeight = State(initialValue: (mode == .scrollable) ? .zero : .infinity)
   }
 
-  public var body: some View {
+    internal var body: some View {
     let stack = VStack {
        GeometryReader { geometry in
          self.content(in: geometry)
@@ -81,7 +81,7 @@ internal struct FlowLayout<RefreshBinding, Data: Collection, ItemView: View>: Vi
       .background(HeightReaderView(binding: $totalHeight))
   }
 
-  public enum Mode {
+    internal enum Mode {
     case scrollable, vstack
   }
 }
@@ -105,7 +105,7 @@ private struct HeightReaderView: View {
 }
 
 
-public extension FlowLayout where RefreshBinding == Never? {
+internal extension FlowLayout where RefreshBinding == Never? {
     init(mode: Mode,
          items: Data,
          itemSpacing: CGFloat = flowLayoutDefaultItemSpacing,
