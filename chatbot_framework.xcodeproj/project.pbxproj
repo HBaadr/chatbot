@@ -10,9 +10,22 @@
 		54722C2B2D77407400C08663 /* chatbot_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = chatbot_framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		547230472D78699F00C08663 /* Exceptions for "chatbot_framework" folder in "chatbot_framework" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Package.swift,
+			);
+			target = 54722C2A2D77407400C08663 /* chatbot_framework */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		54722C2D2D77407400C08663 /* chatbot_framework */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				547230472D78699F00C08663 /* Exceptions for "chatbot_framework" folder in "chatbot_framework" target */,
+			);
 			path = chatbot_framework;
 			sourceTree = "<group>";
 		};
