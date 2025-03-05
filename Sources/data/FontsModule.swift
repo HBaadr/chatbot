@@ -20,7 +20,7 @@ public struct FontsModule {
     
     static func registerFonts() {
         BC.allCases.forEach { font in
-            registerFont(bundle: Bundle(for: BundleToken.self), fontName: font.rawValue, fontExtension: "otf")
+            registerFont(bundle: .main, fontName: font.rawValue, fontExtension: "otf")
         }
     }
     
@@ -32,8 +32,6 @@ public struct FontsModule {
         }
         
         if let cfURL = bundle.url(forResource: fontName, withExtension: fontExtension) {
-              CTFontManagerRegisterFontsForURL(cfURL as CFURL, .process, nil)
-        } else if let cfURL = bundle.url(forResource: fontName, withExtension: fontExtension) {
               CTFontManagerRegisterFontsForURL(cfURL as CFURL, .process, nil)
         } else {
             assertionFailure("Could not find font:\(fontName) in bundle:\(bundle)")
