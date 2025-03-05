@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		547230432D78682F00C08663 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 547230012D78682F00C08663 /* Localizable.xcstrings */; };
 		547230442D78682F00C08663 /* chatbot_framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 54722FFF2D78682F00C08663 /* chatbot_framework.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		54722C2B2D77407400C08663 /* chatbot_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = chatbot_framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54722FFF2D78682F00C08663 /* chatbot_framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chatbot_framework.h; sourceTree = "<group>"; };
-		547230012D78682F00C08663 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		547230022D78682F00C08663 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +46,6 @@
 				547230A42D786AB900C08663 /* Sources */,
 				5472304D2D786AB400C08663 /* Resources */,
 				54722FFF2D78682F00C08663 /* chatbot_framework.h */,
-				547230012D78682F00C08663 /* Localizable.xcstrings */,
 				547230022D78682F00C08663 /* Package.swift */,
 				54722C2C2D77407400C08663 /* Products */,
 			);
@@ -138,7 +135,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				547230432D78682F00C08663 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
