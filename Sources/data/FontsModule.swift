@@ -18,7 +18,7 @@ public struct FontsModule {
     
     static func registerFonts() {
         BC.allCases.forEach { font in
-            registerFont(bundle: .main, fontName: font.rawValue, fontExtension: "otf")
+            registerFont(bundle: Bundle(identifier: "ma.inwi.chatbot-framework")!, fontName: font.rawValue, fontExtension: "otf")
         }
     }
     
