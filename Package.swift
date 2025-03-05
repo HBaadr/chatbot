@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "Chatbot",
-            //type: .dynamic,
+            type: .dynamic,
             targets: ["Chatbot"/*, "ChatbotRemoteBinaryPackage"*/]
         ),
     ],
