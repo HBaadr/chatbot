@@ -23,7 +23,7 @@ let package = Package(
             dependencies: [
                 //.product(name: "SDWebImageSwiftUI", package: "SDWebImageSwiftUI"),
             ],
-            resources: [.process("Fonts")]/*,
+            resources: [.process("Resources")]/*,
             swiftSettings: [
                 .define("BUILD_LIBRARIES_FOR_DISTRIBUTION")
             ]*/
