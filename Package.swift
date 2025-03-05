@@ -23,7 +23,13 @@ let package = Package(
             dependencies: [
                 //.product(name: "SDWebImageSwiftUI", package: "SDWebImageSwiftUI"),
             ],
-            resources: [.process("Resources")]/*,
+            resources: [
+                .copy("Resources/Fonts/BasierCircle-Medium.otf"),
+                .copy("Resources/Fonts/BasierCircle-Bold.otf"),
+                .copy("Resources/Fonts/BasierCircle-SemiBold.otf"),
+                .copy("Resources/Fonts/BasierCircle-Regular.otf"),
+                .process("Resources/Assets.xcassets")
+            ]/*,
             swiftSettings: [
                 .define("BUILD_LIBRARIES_FOR_DISTRIBUTION")
             ]*/
