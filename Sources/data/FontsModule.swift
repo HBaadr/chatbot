@@ -29,7 +29,7 @@ public struct FontsModule {
             return
         }
 
-       /* guard let fontURL = bundle.url(forResource: fontName, withExtension: fontExtension) else {
+        guard let fontURL = bundle.url(forResource: fontName, withExtension: fontExtension) else {
             fatalError("Couldn't find font \(fontName)")
         }
 
@@ -42,7 +42,7 @@ public struct FontsModule {
         }
 
         var error: Unmanaged<CFError>?
-        let success = CTFontManagerRegisterGraphicsFont(font, &error)*/
+        let success = CTFontManagerRegisterGraphicsFont(font, &error)
 
     }
 }
