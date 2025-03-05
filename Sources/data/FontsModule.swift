@@ -8,10 +8,10 @@
 import SwiftUI
 
 internal enum BC : String, CaseIterable {
-    case medium = "BasierCircle-Medium"
-    case bold = "BasierCircle-Bold"
-    case semibold = "BasierCircle-SemiBold"
-    case regular = "BasierCircle-Regular"
+    case medium = "BasierCircle-Medium.otf"
+    case bold = "BasierCircle-Bold.otf"
+    case semibold = "BasierCircle-SemiBold.otf"
+    case regular = "BasierCircle-Regular.otf"
 }
 
 public struct FontsModule {
